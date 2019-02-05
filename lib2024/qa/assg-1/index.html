@@ -1,0 +1,168 @@
+<!-- This is a html comment -->
+<!-- Shortcut for comment is ctrl+/ -->
+<!DOCTYPE html>
+<!-- the doctype tag is used for document type declaration -->
+<html> 
+  <!-- After the document type declaration, the remainder of an HTML document is contained by the HTML element -->
+  <!-- HTML is parent tag/element for HEAD & BODY -->
+  <head>
+	<!-- The HEAD element contains information about the current document, such as its title, keywords and other data that is not considered document content. User agents do not generally render elements that appear in the Head as content -->
+	  <title>HTML Standard Tags - Week 4</title>
+	<!-- Every HTML document must have a TITLE element in the HEAD section. TITLE element is used to identify the contents of a document -->
+  <!-- Meta charset defines the character set of your document -->
+  <!-- Meta tag is a self closing tag so it does not require </meta> -->
+  <!-- Meta tag will have a name and content attributes that will the define the function of that meta tag -->
+    <meta charset="utf-8">
+    <!-- Meta description tag is a SEO tag used to tell the site crawlers what your site is about -->
+    <meta name="description" content="Website for HTML tags">
+    <!-- meta keywords is a SEO tag used to tell the site crawlers about the keywords in your website -->
+    <meta name="keywords" content="HTML, HTML5, HTML tags, basic tags, Standard Tags">
+
+    <!-- To tell the SEO crawlers to not index and not follow your webpage -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- To tell the SEO crawlers to index and follow your webpage -->
+    <meta name="robots" content="index, follow">
+
+
+  </head>
+<!-- The body tag contains the body of the HTML document -->
+  <body>
+  		<!-- The header is a structural element - it defines a part of the page as the header and all the content inside of it is heading content -->
+  		<!-- The header element is a new HTML5 element for defining HEADINGS in HTML -->
+  		<!-- NOTE: HTML5 elements such as header, article, section, aside would not work in older versions of IE (IE 9 or previous versions) -->
+
+      <!-- id attribute is used to give a unique identification to your html elements -->
+      <!-- Note: two elements can not have same ids -->
+      <!-- Two worded id must be separated by -, ex page-title -->
+
+      <!-- class attribute is used as identifcation for group of elements -->
+      <!-- unlike the id, multiple elements can have same class -->
+
+  		<header id="page-header">
+  			<h1 id="header-one" class="heading">Week 4 HTML Standard Tags</h1>
+  			<!-- the h tags, <h1> through <h6> define headings on your site -->
+  			<!-- <h1> being the most important heading, whereas <h6> being the least important -->
+  			<!-- All header elements are block elements - they will push content down to the next line -->
+  			<h2 id="header-two" class="heading">H2 Heading</h2>
+  			<h3 id="header-three" class="heading">H3 heading</h3>
+  			<h4 id="header-four" class="heading">H4 heading</h4>
+  			<h5 id="header-five" class="heading">H5 heading</h5>
+  			<h6 id="header-six" class="heading">H6 Heading</h6>
+
+        <!-- nav tag defines the navigation for your website, that will contain various links for your website -->
+        <!-- your webpage can have multiple nav tags -->
+        <!-- Nav start -->
+        <nav id="main-navigation" class="navigation">
+          <!-- ul - unordered list, this is used as a standard tag to create list of links -->
+          <ul>
+            <!-- li is the list tag, that defines a list element for the ul or unordered list -->
+            <!-- li is a child element of ul or ol and cannot be used on its own -->
+            <li>
+              <!-- a tag is the anchor tag, which creates a link, but it requires various instructions such as link of the page, title, text to be used as link etc. -->
+              <a href="forms-tables.html" title="Forms and Tables" target="_blank">FORMS and Tables</a>
+              <!-- href attribute is the actual link of the page that we are targetting  -->
+              <!-- Title attribute is basically a title given to the link -->
+              <!-- Text inside the opening <a> and closing </a> is the actual text that is displayed for your link -->
+              <!-- target attribute is used to define what window to open the link in, _blank means open the link in new window -->
+            </li>
+
+            <li>
+              <a href="contact-page.html">Contact Page</a>
+            </li>
+            <li>
+              <a href="about-us.html">About Page</a>
+            </li>
+            <li>
+              <!-- using # we can target an id of element in links, this is called internal linking  -->
+              <a href="#footer">Footer internal link</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav End -->
+  		</header>
+      <!-- main tag is used to define the main content of website -->
+      <main id="main" class="main">
+        <!-- section is also a structural tag that defines a section of your website -->
+        <section id="main-img-section" class="site-section">
+          <!-- img tag is used to link images to your html document -->
+          <!-- img tag is self closing tag -->
+          <!-- src attr. is the url of the image that you want to link -->
+          <!-- alt attr. is the text description of your image, that shows in case the image is not loaded -->
+          <!-- title attribute is the text displayed when hovering over the image -->
+          <img src="images/main-img.jpg" alt="Main image" title="Main image">
+        </section> 
+
+        <section id="main-content-section" class="site-section">
+          <!-- article is a structural tag that is used to define text content on your webpage -->
+          <article id="main-text">
+            <h2>Main Text</h2>
+            <!-- <p> tag is the paragraph tag that is used to create text on your html document -->
+            <p>
+              This is some dummy text to be used in paragraph tag
+            </p>
+            <p>Another paragraph </p>
+            <p>
+              <!-- a span is generalized element to hold text that is not to be used as block level text -->
+              <!-- span being an inline element, will show next to each other instead of being on different lines like block elements (p, ul, li, article, section)  do -->
+              <span>Span 1 </span>
+              <span>Span 2</span>
+              <span>Span 3</span>
+            </p>
+
+            <p>
+              <!-- a tags are also inline level elements -->
+              <a href="test.html">Link 1</a>
+              <a href="test2.html">Link 2</a>
+              <a href="test3.html">Link 3</a>
+            </p>
+          </article>
+          <!-- aside tag is used to defines sidebar or any less important information on your webiste -->
+          <aside>
+            <h3>Sidebar title</h3>
+            <nav id="sidebar-navigation" class="navigation">
+              <ul>
+                <li>
+                  <a href="sidebar-link.html">Sidebar link 1</a>
+                </li>
+                <li>
+                  <a href="sidebar-link.html">Sidebar link 2</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+        </section>
+        <!-- div tag is used to create sections without using structural tags such as section, article or aside -->
+        <div>
+          Text inside a div tag. 
+        </div>
+
+        <div>
+          <h3>Ordered List</h3>
+          <!-- <ol> ordered list is used to creat numbered list on your HTML document -->
+            <!-- similar to ul, an ol will have <li> as child element to define list -->
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </div>
+
+      </main>
+      <!-- footer is also a structural tag used to define the footer of your document -->
+      <footer id="footer">
+        <section>
+          <h4>Footer heading 1</h4>
+          <p>Address goes here</p>
+        </section>
+
+        <section>
+          <h4>Copyright info</h4>
+          <!-- &copy; is known as HTML entity. This will display a copyright symbol when used in HTML -->
+          <!-- Other example being &amp; which shows & symbol -->
+          <p>copyright &copy; 2019 Winnerjit </p>
+        </section>
+      </footer>
+
+  </body>
+</html>
