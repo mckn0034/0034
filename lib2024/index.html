@@ -1,97 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title style="color:red">  Week  4 - Basic HTML Tags</title>
-	<meta charset="utf=8">
-	<meta name="descripition" content="this is a HTML document containting HTML Tags">
-	<meta name="keywords" content="HTML, HTML5, Tags, Basic HTML, Standard Tags">
-	<meta name="robots" content="noindex, nofollow">
-
+	
+	<h1>Assignment 2</h1>
 </head>
 <body>
-	<header> 
-		<h1>Week4 - Basic of HTML</h1>
-
-		<nav>
-			<ul>
-				<li>
-				<a href="http://algonquincollege.com">  Link 1</a>
-			   </li>
-				<li>
-			<a href="http://google.com"> Link 2</a>
-				</li>
-				<li>
-				<a href="http://lynda.com" title="Lynda Website" target="blank">Link 3</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
 	<main>
-		<p>Paragrph in the main tag</p> 
-		<div>
-			content in a div tag
-		</div>
-		<section>
+	<h2>Employee list</h2>	
+	<table cellspacing=”10″ border=”3″>
+
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Email </th>
+		</tr>
+		<tr>
+
+			<td>1</td>
+			<td>J.Smith</td>		
+			<td>johnsmith@hotmail.com</td>
+		</tr>
+		<tr>
+
+			<td> 2</td>
+			<td>B.Murray</td>
+			<td>billmurray@hotmail.ca</td>
+		</tr>
+		<tr>
+
+			<td> 3</td>
+			<td> M.Zuckerberg</td>
+			<td>mark_zuckerberg@gmail.com</td>
+		</tr>
+		<tr>
+
+			<td> 4</td>
+			<td> J.Child</td>
+			<td>juliachild12@gmail.com</td>
+		</tr>
+		<tr>
+
+			<td> 5</td>
+			<td> T.Holland</td>
+			<td>TomHollandg@hotmail.com</td>
+		</tr>
+		<tr>
+			All of the below are Division Heads
+		</tr>
+	
+	</table>
+		<section id="images" class="main-section">
+			<h3>Animals</h3>
 			<article>
-				<h2>Main text</h2>
-				<p style="color:red">paragraph inside an article is red</p><p>paragraph</p>
-				<p>
-					<span></span>
-					<span>span 2</span>
-					<span></span>
-					<span>Span 4</span>
-				</p>
-				<p>this text is <b>bold</b></p>
-				<p>this text is <i>Italics</i></p>
-				<p>this text is <U>underline</U></p>
-				<p>
-					<b>
-						<i>
-							<u>
-								Combination
-							</u>
-						</i>
-					</b>
-				</p>
+				<figure>
+					<img src="img/elephant.jpg" alt="Image 1" width="300"  height="200">
+					<figcaption>This is an elephat</figcaption>
+				</figure>
+				<figure>
+					<img src="img/hawk.jpg" alt="Image 2" width="300" height="200">
+					<figcaption>This is a hawk</figcaption>
+				</figure>
+				<figure>
+					<img src="img/lion.jpg" alt="Image 3" width="300" height="200">
+					<figcaption>This is a lion</figcaption>
+				</figure>
+				<figure>
+					<img src="img/snake.jpg" alt="Image 4" width="300" height="200">
+					<figcaption>This is a snake</figcaption>
+				</figure>
+				<figure>
+					<img src="img/whale.jpg" alt="Image 5" width="300" height="200">
+					<figcaption>This is a whale</figcaption>
+				</figure>
 			</article>
-			<aside>
-				<h3>Extra Links</h3>
-				<nav>
-					<ul>
-						<li>
-							<a href="http://facebook.com"> Sub link 1</a>
-						</li>
-					</ul>
-					<li>
-						<ul>
-							<li>Sub Sub list 1</li>
-							<li>Sub Sub list 2</li>
-							<ol>
-								<li>Sub sub sub 1</li>
-								<li>Sub sub sub 2</li>
-							</ol>
-						</ul>
-					</li>
-				</nav>
-			</aside>
-		</section>
-	</main>
-	<div>
-		div outside main
-	</div>
-	<footer>
-		<p>this is a footer</p>
-		<section>
-			<p>Section 1</p>
-		</section>
-		<section>
-			<p>Section 2</p>
-		</section>
-		<section>
-			<p>Section 3</p>
 		</section>
 
-	</footer>
+        <section>
+            	<h4>HTML Entities</h4>
+            	<article>
+            		<p>Non Breaking Space: &#160; </p>
+            		<p>ampersand : &#38; </p>
+            		<p>Pound : &#163;</p>
+            		<p>Copyright : &#169;</p>
+            	</article>
+        </section>
+
+            <section id="special-tags" class="main-section">
+            	<h4>Special Tags</h4>
+            	<article id="st-dl" class="special-tag">
+            		
+            		<dl> 
+            			
+            			<dt>Coffee</dt> 
+            			
+            			<dd>- black hot drink</dd> 
+    					<dt>Milk</dt> 
+    					<dd>- cold white drink</dd> 
+    					 
+    				</dl>
+            	</article>
+   <div>
+    	<p style="text-decoration-line:underline;" style="text-decoration-style: dotted">
+    	HTML 
+    	</p> 
+  	  <p  style="text-decoration-line: underline;" style="text-decoration-style: dashed;">CSS</p> 	
+	</div>  
+	<section>
+        <p>&#9660; What is a mobile Phone?</p>
+         <p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
+    </section>
+  </main>
+  <footer>
+  	<h2>Hidden Commet:</h2>
+  	<!--note:this was done by Katelyne Mcknight -->
+  </footer>
+
 
 </body>
 </html>
