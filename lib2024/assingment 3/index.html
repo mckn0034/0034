@@ -1,0 +1,131 @@
+<!DOCTYPEhtml>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+</head>
+<body>
+	<div class="wrapper">
+            <section>
+          
+               
+            	<form id="htmlForm" action="somephppage.php" method="get">
+                	<div>
+                    	
+                    	<label for="firstName">First Name: </label>
+                    	
+                    	<input type="text" name="firstName" id="firstName" placeholder="firstName">
+                        
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name: </label>
+                     
+                     
+                        <input type="text" name="lastName" id="lastName" placeholder="last name" >
+                    </div>
+                    <div>
+                  		<label>Email id: <input type="email" name="em" id="em"></label>
+                   </div>
+                    <div>
+                       <label for="pass">Password: </label>
+                    	
+                       <input type="password" name="pass" id="pass">
+                    </div>
+                    <div>
+                    	<label for="Introductory Text">Introductory Text: </label>
+                        <textarea name="Introductory Text" id="Introductory Text"></textarea>
+                    </div>
+                    <div>
+                    
+                    <label>Date of Birth: <input type="date" name="da" id="da"></label>
+                </div>
+                <div>
+                    <label>Phone number: <input type="number" name="num" id="num"></label>
+                </div>
+                 <div>
+                    	
+                       <label>Gender:</label>
+                        <label for="male">Male: 
+                            <input type="radio" name="forms" id="male" checked value="male">
+                          
+                        </label>
+                        <label for="female">Female: 
+                            <input type="radio" name="forms" id="female" value="female">
+                           
+                        </label>
+                        <label for="prefer not to say">Prefer not to say: 
+                            <input type="radio" name="forms" id="prefer" value="prefer">
+                    	</label>
+                 </div>
+                 <div>
+                    	<label for="address">Address: </label>
+                        <textarea name="address" id="address"></textarea>
+                </div>
+
+               <div>
+                       	<label for="postal code">Postal Code: </label>
+                        <textarea name="postal code" id="postal code"></textarea>
+                </div> 
+                <div>
+                    	<label for="city">City: </label>
+                        <textarea name="city" id="city"></textarea>
+                </div>  
+                  <div>
+                       <label for="country">Country:</label> 
+                    	
+                        <select name="country" id="country">
+                        	
+                            <optgroup label="country">
+                                <option value="c">Canada</option>
+                                <option value="m" selected>Mexico</option>
+                                <option value="us">United States</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                    	 <label for="province ">Province:</label> 
+                    	
+                        <select >   
+                            <optgroup label="province">
+                            	<option value="a">Alberta</option>
+                                <option value="bc">British Columbia</option>
+                                <option value="m">Manitoba</option>
+                                <option value="nb">New Brunswick</option>
+                                <option value="nal">Newfoundland and Labador</option>
+                                <option value="ns">Nova Scotia</option>
+                                <option value="n">Nunavut</option>
+                                <option value="nwt">North West Territories</option>
+                                <option value="o">Ontario</option>
+                                <option value="pei">Prince Edward Island</option>
+                                <option value="q">Quebec</option>
+                                <option value="s">Saskatchewan</option>
+                                <option value="y">Yukon</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                     
+                <div>
+                    <label>URL: <input type="url" name="ur" id="ur"></label>
+               </div>
+                <fieldset>
+                    
+                     <legend>Hobbies</legend>
+                        
+                    <div>
+                     	<label for="wood" >Wood Working:<input type="checkbox" name="wpd" id="wood"></label>
+                        <label for="Sports">Sports:<input type="checkbox" name="Sports" id="aports"></label>
+                        <label for="photo" >Photography<input type="checkbox" name="photo" id="photo"></label>
+                        <label for="crafts">Arts and Crafts: <input type="checkbox" name="Crafts" id="crafts"></label>
+                        <label for="video" >Video Games<input type="checkbox" name="video" id="video"></label>
+                        <label for="baking" >Baking/Cooking:<input type="checkbox" name="baking" id="baking"></label>
+                        <label for="other" >Other<input type="checkbox" name="other" id="other"><textarea name="other" id="other"></textarea></label>
+
+                    </div>   
+                </fieldset>
+                <div>
+              		<button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div> 
+
+    </body>
+</html>
